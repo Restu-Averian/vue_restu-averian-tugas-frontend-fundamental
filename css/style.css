@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+    @media screen(max-width<600px)
+    @media screen(min-width>=600px and max-width<960px)
+    @media screen(max-width>=960px) --> Main
+*/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .content {
+  height: 80px;
+  width: 33.3%;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .container .content {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container .content {
+    width: 100%;
+  }
+}
+
+.container .content:nth-child(1) {
+  background-color: red;
+}
+
+.container .content:nth-child(2) {
+  background-color: green;
+}
+
+.container .content:nth-child(3) {
+  background-color: blue;
+}
+
+.container .content:nth-child(4) {
+  background-color: yellow;
+}
+
+.container .content:nth-child(5) {
+  background-color: purple;
+}
+
+.container .content:nth-child(6) {
+  background-color: grey;
+}
+/*# sourceMappingURL=style.css.map */
